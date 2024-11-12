@@ -3,6 +3,7 @@ from rest_framework import generics, viewsets
 from rest_framework.permissions import IsAuthenticated
 from .models import Menu, Booking
 from .serializers import MenuSerializer, BookingSerializer
+from rest_framework.viewsets import ModelViewSet
 
 # Create your views here.
 def index(request):
