@@ -9,6 +9,12 @@ class Booking(models.Model):
 class Menu(models.Model):
     title = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    inventory = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(99999)])
+    inventory = models.IntegerField(
+        default=0,
+        validators=[MinValueValidator(1), MaxValueValidator(99999)]
+        )
+    
+    def __str__(self):
+        return f'{self.title} : {str(self.price)}'
 
     
