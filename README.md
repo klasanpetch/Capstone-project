@@ -1,2 +1,6 @@
 # Capstone-project
-/restaurant/bookings/
+/restaurant/
+
+/restaurant/bookings/ (with token)
+/restaurant/menu/ (with token)
+/restaurant/menu/<int:pk> (no token)
