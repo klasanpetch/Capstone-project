@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'LittleLemon',
 ]
 
 MIDDLEWARE = [
@@ -80,9 +81,9 @@ WSGI_APPLICATION = 'LittleLemon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LittleLemon',
-        'USER': 'root',
-        'PASSWORD': 'kla0891117564',
+        'NAME': 'littlelemon',
+        'USER': 'admindjango',
+        'PASSWORD': 'employee@123!',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {

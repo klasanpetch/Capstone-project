@@ -1,1 +1,2 @@
 # Capstone-project
+/restaurant/bookings/
